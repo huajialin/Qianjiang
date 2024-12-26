@@ -1,0 +1,136 @@
+/* 以下为照片向左对齐 */
+div#box {
+  border: 20px solid yellow;
+  border-radius: 20px;
+  width: 1200px;
+  margin: 0;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 500px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+  /* 突显一下 */
+
+div.gallery img {
+  width: 100%;
+  height: 100px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* 一下为任务介绍主体框架布局 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #2196F3;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.footer {
+  background-color: #444;
+  color: white;
+  padding: 15px;
+}
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.clearfix::after {
+  /* 在后面添加内容 */
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.sidemenu {
+  width: 25%;
+  /* height: 250px; */
+}
+
+.content {
+  width: 75%;
+}
+
+.sidemenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidemenu li a {
+  margin-bottom: 4px;
+  display: block;
+  padding: 8px;
+  background-color: #eee;
+  text-decoration: none;
+  color: #666;
+}
+.sidemenu li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.sidemenu li a.active {
+  background-color: #008CBA;
+  color: white;
+}
+
+/* 多列 */
+div.fen {
+  column-count: 3;
+}
+  /* 属性规定元素应被划分的列数。 */
+div.fen {
+  column-gap: 40px;
+}
+  /*  属性规定列之间的间隔。 */
+div.fen {
+  column-rule-style: solid;
+}
+  /*  属性规定列之间的规则样式： */
+div.fen {
+    column-rule-width: 1px;
+}
+  /* 属性规定列之间的规则宽度： */
+div.fen {
+    column-rule-color: lightblue;
+}
+  /* 属性规定列之间的规则的颜色： */
+div.fen {
+  column-rule: 1px solid lightblue;
+}
+/*  属性是用于设置上面所有 column-rule-* 属性的简写属性。 */
+h2 {
+  column-span: all;
+}
+  /* 属性规定元素应跨越多少列。 */
+div.fen {
+  column-width: 300px;
+}
+  /* 属性为列指定建议的最佳宽度。 */
+
+
+  
+  div.change {
+    font-size: 50px;
+  }

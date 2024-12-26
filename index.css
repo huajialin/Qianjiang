@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    height: 10px;
+    /* background-color: pink; */
+}
+
+.top-inner {
+    text-shadow: 2px 2px 5px rgb(47, 0, 255);
+    width:400px;
+    height: 50px;
+    /*background-color: #ababab;*/
+    margin: 0 auto;
+}
+.top-inner h1 {
+    font-size:70px;
+    font-family: 华文彩云;
+    /* 华文彩云：STCaiyun */
+}
+
+.banner {
+    width: 400px;
+    height: 150px;
+    /*background-color: purple;*/
+    margin: 0 auto;
+}
+
+.banner .li-1 {
+    float: left;
+    width: 217px;
+    height: 150px;
+    margin-right: 10px;
+    margin: 0 auto;
+}
+
+.banner #ul-1 {
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.banner #ul-1 .a-1 {
+    display: block;
+    padding: 8px;
+    width: 200px;
+    height: 25px;
+    font-size: 100px;
+    color: blueviolet;
+}
+
+.banner #ul-1 .li-1>a:hover {
+    color: orange;
+}
+
+.main {
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+
+.left {
+    width: 288px;
+    height: 500px;
+    background-color: aliceblue;
+    float: left;
+    border: 1px solid red;
+}
+.right {
+    width: 600px;
+    height: 500px;
+    float: right;
+}
+.main .right img {
+    width: 100%;
+    height: 100%;
+}
+.footer {
+    width: 900px;
+    height: 120px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+/* 渐变色 */
+#myDIV {
+    width: 100%;
+    /* height: 200px; */
+    /* background: red; */
+    animation: mymove 5s infinite;
+}
+  
+  @keyframes mymove {
+    from {background-color: greenyellow;}
+    to {background-color: bisque;}
+  }
+
+  /* 按钮 */
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 40px;
+    font-size: 1    rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: aqua;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  /* 登录 */
+  div.fixed {
+    position: fixed;
+    top: 5px;
+    right: 50px;
+    /* width: 55px;
+    height: 30px;
+    border: 5px solid red; */
+  }
+  .styled-z {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 40px;
+    font-size: 1    rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: red;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .styled-z:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }

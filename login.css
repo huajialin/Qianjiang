@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+.container {
+    height: 100%;
+    background-image: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    /* 设置渐变背景 */
+}
+.login-wrapper {
+    background-color: #fff;
+    width: 358px;
+    height: 588px;
+    border-radius: 15px;/*设置圆角*/
+    padding: 0 50px;
+    position: relative;/*控制元素相对定位,relative不脱离文档流*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);/*向上和左，移动自身长宽的 50%，使其居于中心位置。translate可以在不知道宽高的情况下进行居中，tranlate函数中的百分比是相对于自身宽高的百分比*/
+}
+.header {
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;/*用以设定元素内文本的水平对齐方式*/
+    line-height: 200px;/*行高,在DIV中的元素上下居中*/
+}
+.input-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 0;
+    padding: 10px;
+    border-bottom: 1px solid rgb(128, 125, 125);
+    font-size: 15px;
+    outline: none;
+}
+.input-item:placeholder {
+    text-transform: uppercase;
+    /* 转换文本 */
+}
+.btn button {
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+    background-image: linear-gradient(to right, #a6c1ee, #fbc2eb);
+    color: #fff;
+    border-style: hidden;
+}
+.msg {
+    text-align: center;
+    line-height: 88px;
+}
+a {
+    text-decoration-line: none;
+    color: #abc1ee;
+}

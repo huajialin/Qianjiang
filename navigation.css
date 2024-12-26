@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* 盒子内部和盒子中文字间的距离 */
+  list-style: none;
+  text-decoration: none;
+  /* 定义标准文本 */
+  font-weight: 520;
+  /* 定义粗细 */ 
+  font-family: 'KaiTi';
+}
+
+#nav {
+  position: sticky;
+  width: 1400px;
+  height: 72px;
+  /* background-image: url("./source/background\ 1-7.jpg"); */
+  border-radius: 20px;
+  /* 定义弧度 */
+  top: 0;
+  margin:0px;
+  margin: 0 auto;
+  background-color: rgb(247, 249, 250);
+}
+
+#nav>ul {
+  margin: 0 auto;
+}
+
+#nav>ul>li {
+  float: left;
+  width: 45%;
+  height: 72px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#nav>ul>li>a {
+  display: block;
+  text-align: center;
+  line-height: 72px;
+  /* 行高 */
+  font-size: 30px;
+}
+
+#nav>ul>li>a:hover {
+  color: orange;
+}
+/* 当鼠标悬停时更改链接颜色） */
+
+ul>span {
+  float: left;
+  line-height: 72px;
+  color: rgb(225, 224, 224);
+  font-weight: 800;
+  /* 字体加粗 */
+  font-size: 24px;
+}
+
+#nav>ul>li>.a1 {
+  color: #FF0036;
+}
+
+#nav>ul>li>.a2 {
+  color: rgb(101, 198, 58);
+}
+
+div#photo-1 {
+  width: 1400px;
+  height: 800px;
+  margin: 0px;
+}
+#photo-1>img {
+  width: 1400px;
+  height: 800px;
+  margin: 0px;
+}
+
+#Sub-background {
+  background-image: url("./source/background\ 1-2.png");
+  width: 1400px;
+  height: 1200px;
+} 
+
+/* 问题区 */
+/* 空白区 其他元素可见,父族元素背景可见 */
+/* text-indent:20px; */
+/* background-repeat: no-repeat; */

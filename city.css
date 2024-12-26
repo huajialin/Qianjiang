@@ -1,0 +1,152 @@
+/* 一下为两种定位
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid red;
+  } 
+  
+  div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid red;
+  }
+  相对于最近的定位祖先元素进行定位,如果绝对定位的元素没有祖先，它将使用文档主体（body），并随页面滚动一起移动。
+
+  div.fixed {
+    position: fixed;
+    top: 250px;
+    right: 0;
+    width: 300px;
+    border: 3px solid red;
+  } */
+
+  /* 主体框架 */
+  * {
+		margin: 0;
+		padding: 0;
+	}
+	.top {
+		height: 100px;
+	}
+	
+	.top-inner {
+        text-shadow: 2px 2px 5px darkseagreen;
+		width: 900px;
+		height: 80px;
+		/*background-color: #ababab;*/
+		margin: 0 auto;
+		font-size: 25px;
+	
+	}
+	.top-inner h1 {
+		font-family: 方正舒体;
+	}
+	.top-inner h2 {
+		float: right;
+		font-family: 方正舒体;
+	}
+	.banner {
+		width: 900px;
+		height: 150px;
+		/*background-color: purple;*/
+		margin: 0 auto;
+	}
+	.banner li {
+		float: left;
+		width: 217px;
+		height: 150px;
+		margin-right: 10px;
+	}
+
+	.banner .four {
+		margin-right: 0;
+		float: right;
+	}
+	.main {
+		width: 900px;
+		height: 500px;
+		margin: 0 auto;
+	}
+
+	.left {
+		width: 288px;
+		height: 500px;
+		background-color: yellow;
+		float: left;
+		border: 1px solid red;
+	}
+	.right {
+		width: 610px;
+		height: 500px;
+		/* background-color: deeppink; */
+		float: right;
+		
+	}
+	.footer {
+		width: 900px;
+		height: 300px;
+		background-color: skyblue;
+		margin: 0 auto;
+	}
+
+  .banner .li-1>img {
+    width: 217px;
+	height: 150px;
+  }
+
+  /* 图片库 */
+  div.gallery {
+	margin: 10px;
+	border: 0px solid #ccc;
+	float: left;
+	width: 40%;
+	height: 230px;
+  }
+  /* div.gallery img {
+	width: 600px;
+	height: 200px;
+  } */
+  
+   /* div.gallery:hover {
+	border: 1px solid #777;
+	width: 230px;
+	height: 230px;
+	opacity: 1;/*透明度 1表示不透明
+	cursor: pointer;/*超链接鼠标样式：一只手
+  }  */
+  div.gallery img:hover {
+	width: 95%;
+	height: auto;
+	opacity: 1;
+	cursor: pointer;
+  }
+
+  div.gallery img {
+	width: 100%;
+	height: auto;
+	/* opacity: 0.2; */
+	transition: 0.5s;
+	/* 实现过渡效果 */
+  }
+  
+  div.desc {
+	padding: 15px;
+	text-align: center;
+	background-color: #f9f9f996;
+  }
+
+  /* 视频背景 */
+  .bjimg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	object-fit: cover;
+	/* object-fit: cover; 保持原有尺寸比例。但部分内容可能被剪切。 */
+  }

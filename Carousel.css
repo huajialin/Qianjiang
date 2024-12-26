@@ -1,0 +1,31 @@
+/* 轮播图 */
+/* 首先必须保证展示容器大小与图片大小相同，再为图片添加float效果，然后确定插入的图片数量并且为每个图片设置动画阶段，其中每个阶段都是通过使用keyframes设置递增的margin-left值达到切换的效果。 */
+#container {
+    width: 800px;
+    height: 300px;
+    overflow: hidden;/*隐藏溢出*/
+    margin: 0 auto;
+    }
+    
+    #photo {
+    width: 2400px;
+    animation: switch 5s ease-out infinite;/*创建一个动画实例,一个周期为5s*/
+    }
+    #photo > img {
+    float: left;
+    width: 800px;
+    height: 300px;
+    }
+    @keyframes switch {
+    0%, 25% {
+    margin-left: 0;
+    /* maybe浮动的距离 */
+    }
+    35%, 60% {
+    margin-left: -800px;
+    }
+    70%, 100% {
+    margin-left: -1600px;
+    }
+    /* 一个声明，为CSS提供执行或怎么表现的指令。每个声明以@开头,后紧跟一个可用的关键字，这个关键字充当一个标识符，用于表示CSS该做什么。 */
+    }

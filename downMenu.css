@@ -1,0 +1,81 @@
+/* 设置下拉按钮的样式 */
+.dropbtn {
+    /* background-color: #4CAF50; */
+    color: white;
+    padding: 0px;
+    font-size: 0px;
+    /* border: none; */
+    cursor: pointer;
+    /* 设置鼠标样式 */
+  }
+
+/* 容器 <div> - 需要放置下拉内容 */
+.dropdown {
+    position: relative;
+    /* .dropdown 类使用 position:relative，当我们希望将下拉内容放置在下拉按钮的正下方（使用 position:absolute）时，需要使用该类。 */
+    /*
+     控制元素相对定位,relative不脱离文档流而absolute脱离文档流,relative的元素尽管表面上看到它偏离了位置,但它实际上在文档流中还是没变: 
+     static: 无特殊定位;
+     abusolute: 将对象从文档流中拖出 
+    */
+    display: inline-block;
+    /* 
+     可以将对象呈递为内联对象,但是对象的内容作为块对象呈递。旁边的内联对象会被呈递在统一行内，允许空格
+    */
+  }
+  
+  /* 下拉内容（默认隐藏） */
+  .dropdown-content {
+    display: none;
+    /* 隐藏元素 */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* 用 CSS box-shadow 属性，而不是边框，这样下拉菜单看起来像一张“卡片” */
+    /* 外阴影：box-shadow：X轴 Y轴 Rpx（阴影模糊值） color(阴影的颜色)；
+       内阴影：box-shadow：X轴 Y轴 Rpx color inset； */
+    padding: 12px 16px;
+    z-index: 1;
+    /* 用于设置节点的堆叠顺序，拥有更高堆叠顺序的节点将显示在堆叠顺序较低的节点前面 */
+    /* right: 0;  */
+    /* 使下拉菜单从右到左而不是从左到右 */
+    
+  }
+  
+  /* 下拉链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* 悬停时更改下拉链接的颜色 */
+  .dropdown-content a:hover {
+    background-color: #2f91e1}
+  
+  /* 悬停时显示下拉菜单 */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* 显示下拉内容时，更改下拉按钮的背景颜色 */
+.dropdown:hover .dropbtn {
+    background-color: skyblue;
+  }
+
+  .fixed>.dropdown>.dropbtn>img {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* 下拉菜单定位 */
+  div.fixed {
+    position: fixed;
+    top: 200px;
+    right: 50px;
+    width: 61px;
+    height: 82px;
+    /* border: 3px solid skyblue; */
+  }
