@@ -1,157 +1,53 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HJL</title>
+    <link rel="stylesheet" href="./navigation.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="stars"></div>
+        <div class="top">
+            <div class="top-inner">
+                <h1>中国峡谷城</h1>
+            </div>
+        </div>
+        <div class="banner">
+            <ul id="ul-1">
+                <li class="li-1">
+                    <a class="a-1" href="./city.html">
+                        <input class="styled" type="button" value="城市" />
+                    </a>
+                </li>
+                <li class="li-1">
+                    <a class="a-1" href="./figure-home.html">
+                        <input class="styled" type="button" value="人物" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="left">
+            <pre>
+     <h2>中国峡谷城·武陵会客厅
+     ——清新黔江欢迎您！</h2>
+    </pre>
+<p>黔江地处武陵山区腹地和重庆市东南部中心，是国市定位的武陵山片区中心城市之一和渝东南区域中心城市。面积2402平方公里，辖30个乡镇街道，户籍人口55.6万，城市建成区面积27.6平方公里、人口28万，城镇化率60.3％。</p>
 
-body {
-    width:100%;
-    height: 100%;
-}
-.top {
-    height: 10px;
-    margin: 0 auto; /* 水平居中 */
-}
-
-.top-inner {
-    text-shadow: 2px 2px 5px rgb(47, 0, 255);
-    width:400px;
-    height: 50px;
-    margin: 0 auto;
-}
-.top-inner h1 {
-    font-size:80px;
-    margin: 0 auto;
-    font-family: 华文彩云;
-    /* 华文彩云：STCaiyun */
-}
-
-.banner {
-    width: 400px;
-    height: 150px;
-    margin: 0 auto;
-}
-
-.banner .li-1 {
-    float: left;
-    width: 200px;
-    height: 150px;
-    margin-right: 10px;
-    margin: 0 auto;
-}
-
-.banner #ul-1 {
-    width: 100%;
-    margin: 0 auto;
-}
-
-.banner #ul-1 .a-1 {
-    display: block;
-    padding: 8px;
-    width: 100px;
-    height: 25px;
-    font-size: 100px;
-    margin: 0 auto;
-    color: blueviolet;
-}
-
-.banner #ul-1 .li-1>a:hover {
-    color: orange;
-}
-
-.main {
-    width: 900px;
-    height: 100%;
-    margin: 0 auto;
-}
-
-
-.left {
-    width: 288px;
-    height: 500px;
-    background-color: aliceblue;
-    float: left;
-    border: 1px solid red;
-}
-.right {
-    width: 600px;
-    height: 500px;
-    float: right;
-}
-.main .right img {
-    width: 100%;
-    height: 100%;
-}
-.footer {
-    width: 900px;
-    height: 120px;
-    background-color: black;
-    margin: 0 auto;
-}
-
-/* 渐变色 */
-#myDIV {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto; /* 水平居中 */
-    animation: mymove 5s infinite;
-}
-  
-  @keyframes mymove {
-    from {background-color: greenyellow;}
-    to {background-color: bisque;}
-  }
-
-  /* 按钮 */
-  .styled {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 40px;
-    font-size: 1    rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: aqua;
-    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-    box-shadow:
-      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-  }
-  
-  .styled:hover {
-    background-color: rgba(255, 0, 0, 1);
-  }
-  
-  .styled:active {
-    box-shadow:
-      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-  }
-
-  /* 登录 */
-  div.fixed {
-    position: fixed;
-    top: 5px;
-    right: 50px;
-  }
-  .styled-z {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 40px;
-    font-size: 1    rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: red;
-    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-    box-shadow:
-      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-  }
-
-  .styled-z:active {
-    box-shadow:
-      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
-      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
-  }
+<p>丹兴古韵，红色故地。东汉建安六年（公元201年）始置丹兴县，因境内盛产丹砂而得名，迄今1800多年。是少数民族聚居区，以土家族、苗族为主的少数民族人口占75.3％，民族风情独特浓郁，荣获全国民族团结进步示范区。是全国一类革命老区，红三军入渝的首站，原红三军政委万涛的故乡，留下了刘伯承、邓小平、贺龙等老一辈无产阶级革命家的战斗足迹，获评全国双拥模范城。“宁愿苦干、不愿苦熬”的时代精神享誉全国，“天理良心”诚信文化名传于世。</p>
+            </div>
+            <div class="right">
+                <img src="./source/qianjiang-1.jpg">
+            </div>
+        </div>
+        <div class="fixed">
+            <a href="./login.html">
+                <input class="styled1" type="button" value="登录" />
+            </a>
+        </div>
+        <!-- 背景 -->
+        <script src="index.js"></script>
+</body>
+</html>
