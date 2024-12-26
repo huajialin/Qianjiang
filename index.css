@@ -19,7 +19,8 @@ body {
     margin: 0 auto;
 }
 .top-inner h1 {
-    font-size:70px;
+    font-size:80px;
+    margin: 0 auto;
     font-family: 华文彩云;
     /* 华文彩云：STCaiyun */
 }
@@ -49,6 +50,7 @@ body {
     width: 100px;
     height: 25px;
     font-size: 100px;
+    margin: 0 auto;
     color: blueviolet;
 }
 
