@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hjl</title>
+    <link rel="stylesheet" href="../figure.css">
+    <link rel="stylesheet" href="../downMenu.css">
+    <link rel="stylesheet" href="../navigation.css">
+</head>
+ 
+<body>
+    <div id="nav">
+        <ul>  
+            <li class="l2"><a href="../city.html" class="a1">城市</a></li>
+            <span>|</span>
+            <li class="l3"><a href="../figure-home.html" class="a2">人物</a></li>
+    </div>
+    
+    <!-- 下拉菜单 -->
+    <div>
+      <div class="fixed">
+          <div class="dropdown">
+          <button class="dropbtn">
+            <img src="../source/sezi-2.png">
+          </button>
+          <p><span>工具栏</span></p>
+            <div class="dropdown-content">
+             <a href="../index.html">返回首页</a>
+            </div>
+          </div>
+      </div>
+<!-- 左导航栏菜单 -->
+    <div class="clearfix">
+        <div class="column sidemenu">
+          <ul>
+            <li><a href="../figure.html">胡汉钊</a></li>
+            <li><a href="./figure - copy.html" class="active">蒋勤勤</a></li>
+            <li><a href="./figure - copy(1).html">万涛</a></li>
+            <li><a href="./figure - copy(2).html">程绍迥</a></li>
+          </ul>
+        </div>
+<!-- 向右添加内容 -->
+        <div  class="column content">
+          <div class="header">
+            <h1>故事</h1>
+          </div>
+          <pre>
+            蒋勤勤，1975年9月3日出生于重庆市。中国内地女演员，毕业于北京电影学院
+            1994级表演系。1992年，出演了个人首部影视作品《媚态观音》。1995年，主
+            演了古装剧《西施》。1997年，出演了古装剧《康熙微服私访记》。1998年，
+            主演了爱情剧《苍天有泪》。1999年，主演了古装武侠剧《白发魔女》。2000
+            年，主演了爱情剧《青河绝恋》。2002年，主演了古装玄幻武侠剧《风云》。
+            2003年2月1日，主演的古装武侠剧《射雕英雄传》播出。2005年，主演了剧情
+            片《姐姐词典》，凭借该片获得了第10届中国电影表演艺术学会奖“金凤凰奖”。
+            2006年2月13日，主演的商战剧《乔家大院》首播，凭借该剧获得了第23届中国电
+            视金鹰奖最具人气女演员奖和观众喜爱的电视剧女演员，以及第26届中国电视剧飞
+            天奖优秀女演员奖。
+          </pre>
+          </div>
+    </div>
+
+    <div class="footer">
+        <p>她说</p>
+    </div>
+</div>
+
+<!-- 改变内容 -->
+<div class="change">
+  <p id="demo">
+    “我希望自己的人生就像剧本一样，一切都有安排，该出场的人物都会出场。”
+  </p>
+
+  <script>
+    function myFunction2()
+    {
+      x=document.getElementById("demo");  // 找到元素
+      x.innerHTML="“我希望自己的人生就像剧本一样，一切都有安排，该出场的人物都会出场。”";     // 改变内容
+    }
+    </script>
+    <button type="button" onclick="myFunction2()">上一条</button>
+
+  <script>
+    function myFunction()
+    {
+      x=document.getElementById("demo");  // 找到元素
+      x.innerHTML="“过去的都过去了，我们都应该为今天、明天、未来活着。”";     // 改变内容
+    }
+    </script>
+    <button type="button" onclick="myFunction()">下一条</button>
+</div>
+</body>
+</html>
