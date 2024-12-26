@@ -1,53 +1,200 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HJL</title>
-    <link rel="stylesheet" href="./navigation.css">
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-    <div class="stars"></div>
-        <div class="top">
-            <div class="top-inner">
-                <h1>中国峡谷城</h1>
-            </div>
-        </div>
-        <div class="banner">
-            <ul id="ul-1">
-                <li class="li-1">
-                    <a class="a-1" href="./city.html">
-                        <input class="styled" type="button" value="城市" />
-                    </a>
-                </li>
-                <li class="li-1">
-                    <a class="a-1" href="./figure-home.html">
-                        <input class="styled" type="button" value="人物" />
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="main">
-            <div class="left">
-            <pre>
-     <h2>中国峡谷城·武陵会客厅
-     ——清新黔江欢迎您！</h2>
-    </pre>
-<p>黔江地处武陵山区腹地和重庆市东南部中心，是国市定位的武陵山片区中心城市之一和渝东南区域中心城市。面积2402平方公里，辖30个乡镇街道，户籍人口55.6万，城市建成区面积27.6平方公里、人口28万，城镇化率60.3％。</p>
+* {
+    margin: 0;
+    padding: 0;
+}
 
-<p>丹兴古韵，红色故地。东汉建安六年（公元201年）始置丹兴县，因境内盛产丹砂而得名，迄今1800多年。是少数民族聚居区，以土家族、苗族为主的少数民族人口占75.3％，民族风情独特浓郁，荣获全国民族团结进步示范区。是全国一类革命老区，红三军入渝的首站，原红三军政委万涛的故乡，留下了刘伯承、邓小平、贺龙等老一辈无产阶级革命家的战斗足迹，获评全国双拥模范城。“宁愿苦干、不愿苦熬”的时代精神享誉全国，“天理良心”诚信文化名传于世。</p>
-            </div>
-            <div class="right">
-                <img src="./source/qianjiang-1.jpg">
-            </div>
-        </div>
-        <div class="fixed">
-            <a href="./login.html">
-                <input class="styled1" type="button" value="登录" />
-            </a>
-        </div>
-        <!-- 背景 -->
-        <script src="index.js"></script>
-</body>
-</html>
+/*星空背景*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.star {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%;
+    animation: twinkle 1s infinite;
+}
+@keyframes twinkle {
+    0% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0); }
+}
+.top {
+    padding-bottom: 50px;
+    height: 10px;
+    margin: 0 auto; /* 水平居中 */
+}
+
+/*聚光灯*/
+.top-inner {
+    width:600px;
+    height: 50px;
+    margin: 0 auto;
+}
+.top-inner h1{
+    margin: 0 auto;
+    position: relative;
+    color: #2f2f2f;
+    font-size: 120px;
+    font-family: 华文行楷;  
+}
+.top-inner h1::after{
+    content: '中国峡谷城';
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: transparent;
+    background-image: linear-gradient(to left,rgb(0, 174, 255),rgb(0, 255, 85),rgb(212, 0, 255),rgb(0, 204, 255),rgb(255, 0, 0));
+    background-clip: text;
+    -webkit-background-clip: text;
+    clip-path: circle(80px at 0% 50%);
+    animation: move 3s linear alternate infinite;
+}
+@keyframes move{
+    0%{
+        clip-path: circle(80px at 0% 50%);
+    }
+    100%{
+        clip-path: circle(80px at 100% 50%);
+    }
+}
+
+.banner {
+    width: 400px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.banner .li-1 {
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin-right: 10px;
+    margin: 0 auto;
+}
+
+.banner #ul-1 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner #ul-1 .a-1 {
+    display: block;
+    padding: 8px;
+    width: 100px;
+    height: 25px;
+    font-size: 100px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 900px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+.left {
+    width: 288px;
+    height: 500px;
+    color:rgb(80, 156, 233);
+    /* background-color: aliceblue; */
+    float: left;
+    border: 1px solid red;
+}
+.right {
+    width: 600px;
+    height: 500px;
+    float: right;
+}
+.main .right img {
+    width: 100%;
+    height: 100%;
+}
+.footer {
+    width: 900px;
+    height: 120px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+/* 渐变色 */
+.left {
+    animation: mymove 5s infinite;
+}
+  
+  @keyframes mymove {
+    0% {
+        background-color: rgb(211, 236, 173);
+    }
+    50% {
+        background-color: bisque;
+    }
+    100% {
+        background-color: rgb(211, 236, 173);
+    }
+  }
+
+  /* 按钮 */
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 40px;
+    font-size: 1    rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: aqua;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  .styled1 {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 10px;
+    font-size: 1    rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(237, 161, 161);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  
+  .styled:hover {
+    background-color: rgba(255, 0, 0, 1);
+  }
+  
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+      inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+  }
+
+  /* 登录 */
+  div.fixed {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+
+  
