@@ -1,30 +1,4 @@
-/* 一下为两种定位
-div.relative {
-    position: relative;
-    width: 400px;
-    height: 200px;
-    border: 3px solid red;
-  } 
-  
-  div.absolute {
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 200px;
-    height: 100px;
-    border: 3px solid red;
-  }
-  相对于最近的定位祖先元素进行定位,如果绝对定位的元素没有祖先，它将使用文档主体（body），并随页面滚动一起移动。
-
-  div.fixed {
-    position: fixed;
-    top: 250px;
-    right: 0;
-    width: 300px;
-    border: 3px solid red;
-  } */
-
-  /* 主体框架 */
+ /* 主体框架 */
   * {
 		margin: 0;
 		padding: 0;
@@ -106,18 +80,7 @@ div.relative {
 	width: 40%;
 	height: 230px;
   }
-  /* div.gallery img {
-	width: 600px;
-	height: 200px;
-  } */
   
-   /* div.gallery:hover {
-	border: 1px solid #777;
-	width: 230px;
-	height: 230px;
-	opacity: 1;/*透明度 1表示不透明
-	cursor: pointer;/*超链接鼠标样式：一只手
-  }  */
   div.gallery img:hover {
 	width: 95%;
 	height: auto;
